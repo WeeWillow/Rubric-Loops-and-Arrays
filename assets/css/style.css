@@ -1,0 +1,83 @@
+:root {
+  box-sizing: border-box;
+  text-wrap: balance;
+}
+
+body {
+  height: 100vh;
+  /* background pattern :) stolen from https://www.magicpattern.design/tools/css-backgrounds */
+  animation: background 20000ms infinite ease-in-out;
+  background-color: rgba(245, 194, 242, 0.7137254902);
+  opacity: 0.9;
+  background-image: radial-gradient(circle at center center, #f2cb61, #f6e6f7), repeating-radial-gradient(circle at center center, #f5da8f, #f2ce6c, 24px, transparent 48px, transparent 24px);
+  background-blend-mode: saturation;
+}
+
+main {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes background {
+  0% {
+    background-color: rgba(245, 201, 194, 0.7137254902);
+  }
+  10% {
+    background-color: rgba(245, 234, 194, 0.7137254902);
+  }
+  20% {
+    background-color: rgba(219, 245, 194, 0.7137254902);
+  }
+  30% {
+    background-color: rgba(194, 245, 234, 0.7137254902);
+  }
+  40% {
+    background-color: rgba(194, 222, 245, 0.7137254902);
+  }
+  50% {
+    background-color: rgba(200, 194, 245, 0.7137254902);
+  }
+  60% {
+    background-color: rgba(233, 194, 245, 0.7137254902);
+  }
+  70% {
+    background-color: rgba(245, 194, 242, 0.7137254902);
+  }
+  80% {
+    background-color: rgba(245, 194, 229, 0.7137254902);
+  }
+  90% {
+    background-color: rgba(245, 194, 209, 0.7137254902);
+  }
+  100% {
+    background-color: rgba(245, 194, 194, 0.7137254902);
+  }
+}
+section {
+  /* From https://css.glass */
+  background: rgba(122, 220, 253, 0.5);
+  -webkit-backdrop-filter: blur(2.3px);
+          backdrop-filter: blur(2.3px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  margin: 2rem;
+  padding: 2rem;
+}
+
+select {
+  background: rgb(90, 255, 131);
+  border-radius: 1rem;
+  text-align: center;
+  margin: 0.2rem;
+  font-weight: bold;
+  color: rgb(74, 65, 105);
+  font-size: x-large;
+}
+
+p {
+  font-size: x-large;
+  padding: 1rem 10rem 1rem 10rem;
+}/*# sourceMappingURL=style.css.map */
