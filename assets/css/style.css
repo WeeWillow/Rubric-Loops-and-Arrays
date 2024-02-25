@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap");
 :root {
   box-sizing: border-box;
   text-wrap: balance;
@@ -68,16 +69,30 @@ section {
 }
 
 select {
-  background: rgb(90, 255, 131);
+  background: rgba(255, 255, 255, 0.862);
+  padding: 0.4rem 0.25rem 0.4rem 0.25rem;
   border-radius: 1rem;
   text-align: center;
   margin: 0.2rem;
   font-weight: bold;
-  color: rgb(74, 65, 105);
-  font-size: x-large;
+  color: rgb(206, 141, 61);
+  font-size: xx-large;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+select:hover {
+  cursor: pointer;
 }
 
 p {
-  font-size: x-large;
+  font-size: xx-large;
   padding: 1rem 10rem 1rem 10rem;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }/*# sourceMappingURL=style.css.map */

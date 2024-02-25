@@ -1,3 +1,9 @@
+// test for at fange alle med samme class, gennem querySelectorAll
+// ignorer, vil arbejde videre senere!
+
+// select all .trait in html and save as const dropdowns
+const dropdowns = document.querySelectorAll(".trait");
+
 const traits = [
     "linedancing",
     "fishing",
@@ -29,4 +35,6 @@ const traits = [
 ];
 
 let randomTrait = Math.floor(Math.random() * traits.length);
+
+dropdowns.forEach(dropdown)
 

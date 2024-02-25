@@ -3,14 +3,14 @@
 
 // arrays
 // array of images, for random generation (if I can make some cats)
-const image = [
-    "image1",
-    "image2",
-    "image3",
-    "image4",
-    "image5",
-    "image6"
-];
+// const image = [
+//     "image1",
+//     "image2",
+//     "image3",
+//     "image4",
+//     "image5",
+//     "image6"
+// ];
 // array of names, for random generation
 const nameof = [
     "Bertil",
@@ -99,15 +99,15 @@ const title = [
     "Stinky",
 ];
 // array of "roles", for random generation
-const role = [
-    "begging",
-    "bitcoin farming",
-    "pro gaming",
-    "GTA enthusiast",
-    "jellyfish sales rep",
-    "creator of yummy jams",
-    "mouseing"
-];
+// const role = [
+//     "begging",
+//     "bitcoin farming",
+//     "pro gaming",
+//     "GTA enthusiast",
+//     "jellyfish sales rep",
+//     "creator of yummy jams",
+//     "mouseing"
+// ];
 // array of trait level
 const traitlvl = [
     "I suck at",
@@ -153,21 +153,21 @@ const traits = [
 // index - create math random function to randomly generate items from array
 
 // list of randomised arrays
+// let randomRole = Math.floor(Math.random() * role.length);
+// let randomImg = Math.floor(Math.random() * image.length);
 let randomName = Math.floor(Math.random() * nameof.length);
 let randomTitle = Math.floor(Math.random() * title.length);
-let randomRole = Math.floor(Math.random() * role.length);
 let randomTrait = Math.floor(Math.random() * traits.length);
-let randomImg = Math.floor(Math.random() * image.length);
 let randomlvl = Math.floor(Math.random() * traitlvl.length);
 
 // grabbing html elements
 // catimg to insert random image from array
-const imgEl = document.querySelector(".catimg");
+// const imgEl = document.querySelector(".catimg");
 // title element to insert random title from array
 const titleEl = document.querySelector("#titleEl");
 titleEl.textContent = title[randomTitle];
 // trait level element to insert random level of trait from array
-const traitlvlEl = document.querySelector("#traitlvlEl");
+const traitlvlEl = document.querySelector(".traitlvlEl");
 traitlvlEl.textContent = traitlvl[randomlvl];
 
 // forEach loops - to create dropdowns with randomised order
